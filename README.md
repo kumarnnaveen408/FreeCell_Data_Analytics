@@ -17,7 +17,7 @@ Transfer the selected data into a new sheet in the same file and save it as "Cus
 - Which method of payment is more preferred by the customers?
 - Check whether the following services are preferred by the customers or not. Use a bar plot to plot all the services. Create a separate pivot chart for each of the variables; MultipleLines, PaperlessBilling, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies.
 ## Key takeaways
-Digital-First Approach: The high adoption of PaperlessBilling confirms that a digital-first customer experience is critical. Our platforms should be robust and user-friendly.
-Focus on Bundles: The popularity of streaming services suggests that bundling StreamingTV and StreamingMovies with internet packages could be a powerful customer acquisition tool.
-Opportunity in Value-Added Services: While core entertainment services are popular, the lower uptake of TechSupport and OnlineSecurity could present an opportunity. We could either bundle these as a core offering to differentiate ourselves or use them as targeted upsells for specific customer segments.
+- Digital-First Approach: The high adoption of PaperlessBilling confirms that a digital-first customer experience is critical. Our platforms should be robust and user-friendly.
+- Focus on Bundles: The popularity of streaming services suggests that bundling StreamingTV and StreamingMovies with internet packages could be a powerful customer acquisition tool.
+- Opportunity in Value-Added Services: While core entertainment services are popular, the lower uptake of TechSupport and OnlineSecurity could present an opportunity. We could either bundle these as a core offering to differentiate ourselves or use them as targeted upsells for specific customer segments.
  
