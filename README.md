@@ -1,4 +1,4 @@
-# Understanding the Market
+# 1. Understanding the Market
 Before entering a new market, a company must conduct a thorough analysis to understand local customer behaviors. Preferences in one country can be vastly different from another, and a one-size-fits-all strategy often fails. This project simulates this scenario for a telecom operator named "FreeCell" looking to expand. The acquired dataset contains information on telecom customers such as; Customer Profile, Service Usage, Monthly charges, preferred payment methods, churn status etc.
 
 - <a href= "https://github.com/kumarnnaveen408/Freedom_Cell_Data_Analytics/blob/main/Understanding_Market.xlsx">Understanding_the_market<a/>
@@ -20,4 +20,48 @@ Transfer the selected data into a new sheet in the same file and save it as "Cus
 - Digital-First Approach: The high adoption of PaperlessBilling confirms that a digital-first customer experience is critical. Our platforms should be robust and user-friendly.
 - Focus on Bundles: The popularity of streaming services suggests that bundling StreamingTV and StreamingMovies with internet packages could be a powerful customer acquisition tool.
 - Opportunity in Value-Added Services: While core entertainment services are popular, the lower uptake of TechSupport and OnlineSecurity could present an opportunity. We could either bundle these as a core offering to differentiate ourselves or use them as targeted upsells for specific customer segments.
- 
+
+# 2. Demand Prediction
+FreeCell is planning to set up quick registration booths at various cities across the US so as to get its SIM cards distributed with some exciting offers among the population. FreeCell has acquired the data for the SIM registration campaign conducted by various other companies. 
+- <a href="https://github.com/kumarnnaveen408/FreeCell_Data_Analytics/blob/main/Demand%20Prediction.xlsx">Sim_Registration_Data<a/>
+
+The dataset consists of data regarding the number of people who visited the registration booths during 2011 and 2012. The dataset has multiple variables pertaining to month, weekday, season and weather conditions, which might have affected the number of people visiting the booths. A detailed explanation of variables has been provided in the sheet attached above. You have to analyse the data provided to estimate the demand for SIM cards.
+
+The dataset consists of data regarding the number of people who visited the registration booths during 2011 and 2012. The dataset has multiple variables pertaining to month, weekday, season and weather conditions, which might have affected the number of people visiting the booths. A detailed explanation of variables has been provided in the sheet attached above. You have to analyse the data provided to estimate the demand for SIM cards.
+
+Dataset characteristics	
+	- season : season (1:spring, 2:summer, 3:fall, 4:winter)
+	- yr : year (0: 2011, 1:2012)
+	- mnth : month ( 1 to 12)
+	- holiday : weather day is a holiday or not
+	- weekday : day of the week (0 - Monday,6-Sunday)
+	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
+	- weathersit : 
+		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+	- temp : temperature in Celsius
+	- atemp: feeling temperature in Celsius
+	- hum: humidity
+	- windspeed: wind speed
+	- casual: count of people who visited the booth but didn't registered for the SIM Card.
+	- registered: count of people who visited the booth and registered for the SIM Card.
+	- cnt: count of total people including both casual and registered who visited booth.
+## Requirements
+- The first step in building a regression model is to identify the target variable. In this case, you have to predict the demand for SIM cards. Take into account the registered customers and the potential customers who might use the product to finalise the demand. Identify the target variable and highlight the column in blue.
+- Make use of the concept of dummy variables. Dummy variables help in breaking down the categorical variables such as weekdays,months or seasons into numerical values.
+- Create a correlation matrix of the variables into a new sheet named 'Correlation Matrix'.
+- Identify the variable(s) that can be eliminated based on the correlation matrix. The business requirement is to go with variables with the least collinearity. Due to this restriction, consider a correlation of 0.28 or more for insignificant variables. Highlight the variable(s) to be eliminated in red on the sheet.
+- Create a new sheet named 'SR_Significant' and paste the columns with the significant data into the sheet.
+- Standardise the values to increase the efficiency of the model.  Update the 'SR_Significant' sheet to show the standardised values along with mean and standard deviation.
+- Create a sheet named 'Regression' to depict the final regression output using the 'SR_Significant' variables, and highlight variables that are statistically significant in its relationship with the dependent variable.
+## Key takeaways
+- Weather is a primary driver of demand. Temperature is the strongest positive factor, while bad weather, high humidity, and high wind speed are significant deterrents.
+- Seasonality is crucial. Demand patterns change significantly throughout the year, with winter showing a surprisingly strong positive effect in this model relative to spring.
+- The specific day of the week is less important than environmental factors. The model suggests that any day-to-day fluctuation is likely driven more by the weather on that day than by the day's name itself.
+
+# 3. Sales Forecasting
+
+
+
