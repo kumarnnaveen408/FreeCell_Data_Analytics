@@ -10,7 +10,7 @@ Projects
 2.	Demand Prediction	Multiple linear regression:	[Demand_Prediction](https://github.com/kumarnnaveen408/FreeCell_Data_Analytics/blob/main/Demand%20Prediction.xlsx)
 3.	Sales Forecasting:	[Forecasting_sales](https://github.com/kumarnnaveen408/FreeCell_Data_Analytics/blob/main/Forecasting_sales.xlsx)
 
-1. Customer Churn Analysis (Telecom)
+## 1. Customer Churn Analysis (Telecom)
 
 Question: Which customer characteristics and services are linked to customers leaving?
 
